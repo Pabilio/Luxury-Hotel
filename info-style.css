@@ -1,0 +1,153 @@
+:root {
+    --gold: #d4af37;
+    --dark: #1a1a1a;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(212, 175, 55, 0.2);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+}
+
+.sub-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.sub-nav a:hover {
+    color: var(--gold);
+}
+
+/* Layout */
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.info-section {
+    margin-bottom: 80px;
+    scroll-margin-top: 100px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+}
+
+.gold-text {
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+.glass-form {
+    background: var(--glass);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.gold-btn {
+    background: var(--gold);
+    color: #000;
+    border: none;
+    padding: 15px 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.gold-btn:hover {
+    background: #f1c40f;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-item strong {
+    color: var(--gold);
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.map-box {
+    height: 100%;
+    min-height: 250px;
+    background: #222;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    margin: 60px 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .form-row { flex-direction: column; gap: 0; }
+}

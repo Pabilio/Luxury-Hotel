@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHAHABU | Elevated Escapes</title>
+    <link rel="stylesheet" href="rep1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="brand">DHAHABU</div>
+            
+            <div class="city-selector">
+                <div class="map-watermark">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                        <path d="M45,10 L55,15 L70,10 L85,30 L75,50 L80,70 L60,90 L40,85 L20,70 L10,40 L30,20 Z" fill="currentColor" />
+                    </svg>
+                </div>
+                <select id="city-select" onchange="animateArrow()">
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="nairobi">Nairobi</option>
+                    <option value="mombasa">Mombasa</option>
+                    <option value="kisumu">Kisumu</option>
+                    <option value="diani">Diani</option>
+                </select>
+                <span class="moving-arrow" id="arrow">▼</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-card glass">
+            <h2>Book Your Stay</h2>
+            <form id="booking-form">
+                <div class="input-group">
+                    <label>Guest Name</label>
+                    <input type="text" name="guest_name" required placeholder="John Doe">
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Check-In</label>
+                        <input type="date" name="check_in" id="check-in" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Check-Out</label>
+                        <input type="date" name="check_out" id="check-out" required>
+                    </div>
+                </div>
+                <button type="submit" class="gold-btn">Check Availability</button>
+            </form>
+        </section>
+
+        <section class="form-card glass">
+            <h2>General Enquiry</h2>
+            <form id="enquiry-form">
+                <textarea name="message" rows="4" placeholder="How can we help you?"></textarea>
+                <button type="submit" class="gold-btn">Send Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

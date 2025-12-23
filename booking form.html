@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhahabu | Room Booking</title>
+    <link rel="stylesheet" href="booking-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="booking-card">
+        <header>
+            <div class="brand">DHAHABU</div>
+            <h2>Book Your Stay</h2>
+            <p>Luxury awaits in the heart of the city.</p>
+        </header>
+
+        <form action="#" method="POST">
+            <div class="field-group">
+                <label for="guest-name">Guest Name</label>
+                <input type="text" id="guest-name" name="guest-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="field-row">
+                <div class="field-group">
+                    <label for="check-in">Check-In</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="field-group">
+                    <label for="check-out">Check-Out</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-group">
+                    <label for="adults">Adults</label>
+                    <input type="number" id="adults" name="adults" min="1" value="1">
+                </div>
+                <div class="field-group">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" name="children" min="0" value="0">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="room-type">Room Preference</label>
+                <select id="room-type" name="room-type">
+                    <option value="deluxe">Deluxe King Room</option>
+                    <option value="executive">Executive Suite</option>
+                    <option value="presidential">Presidential Suite</option>
+                </select>
+            </div>
+
+            <button type="submit" class="book-button">Check Availability</button>
+        </form>
+    </div>
+
+</body>
+</html>

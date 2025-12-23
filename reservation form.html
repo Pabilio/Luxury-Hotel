@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhahabu | Dining Reservation</title>
+    <link rel="stylesheet" href="reservation form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="reservation-container">
+        <header>
+            <div class="logo-placeholder">DHAHABU</div>
+            <h1>Table Reservation</h1>
+            <p>Experience elevated flavors at our signature restaurant.</p>
+        </header>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="res-date">Date</label>
+                    <input type="date" id="res-date" name="res-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-time">Time</label>
+                    <input type="time" id="res-time" name="res-time" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 Person</option>
+                        <option value="2" selected>2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="requests">Special Requests / Allergies</label>
+                <textarea id="requests" name="requests" rows="3" placeholder="Let us know how we can make your visit special..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Reserve Now</button>
+        </form>
+    </div>
+
+</body>
+</html>
